@@ -35,10 +35,12 @@ function print_logo() {
 function logo_play() {
     declare -A txtlogo
     seconds="0.010"
-    txtlogo[1]=" ____  ____     _____"
-    txtlogo[2]="|  _ )|  _ \   |_   _|___ ____   __  __"
-    txtlogo[3]="|  _ \| |_) )    | |/ .__|  _ \_|  \/  |"
-    txtlogo[4]="|____/|____/     |_|\____/\_____|_/\/\_|"
+    txtlogo[1]="------- |-----    "
+    txtlogo[2]="   |    |    /"
+     txtlogo[3]="  |    |   /"
+     txtlogo[4]="  |    |  /"
+     txtlogo[5]="  |    |   \"
+     txtlogo[6]="-------|     \"
     printf "\e[31m\t"
     for i in ${!txtlogo[@]}; do
         for x in `seq 0 ${#txtlogo[$i]}`; do
@@ -53,12 +55,12 @@ function logo_play() {
 
 function beyondteam() {
 	echo -e "\e[0m"
-	green "     >>>>                       We Are Not Attacker                             "
-	green "     >>>>                       We Are Not Alliance                             "
-	white "     >>>>                       We Are Programmer                               "
-	white "     >>>>                       We Are The Best                                 "
-	red   "     >>>>                       We Are Family                                   "
-	red   "     >>>>                       @BeyondTeam                                     "
+	green "     >>>>                        i                         "
+	green "     >>>>                        r                            "
+	white "     >>>>                        a                             "
+	white "     >>>>                        n                               "
+	red   "     >>>>                         p                                 "
+	red   "     >>>>                         o                                 "
 	echo -e "\e[0m"
 }
 
